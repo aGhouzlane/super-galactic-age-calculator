@@ -12,6 +12,6 @@ describe('GlacticAge', () => {
   });
   test('Should return a conversion from Earth year to Mars year', () => {
     let galacticAge = new GalacticAge(40);
-    expect(galacticAge.toMarsYear()).toEqual(21);
+    expect(galacticAge.toMarsYear()).toEqual(21.27659574468085);
   });
 });

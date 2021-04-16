@@ -31,6 +31,9 @@ export default class GalacticAge {
     if (this.age > 20 && this.age <= 50 && !this.eatGoodFood && !this.exercise && !this.haveFun && !this.getEnoughSleep) {
       ageLeftTolive += 15;
     }
+    if (this.age > 50 && this.age <= 80 && this.eatGoodFood && this.exercise && this.haveFun && this.getEnoughSleep) {
+      ageLeftTolive += 9;
+    }
     return ageLeftTolive;
   }
   findYearsLeftToLiveInMercury() {

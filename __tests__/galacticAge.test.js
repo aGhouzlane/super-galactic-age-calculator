@@ -41,6 +41,10 @@ describe('GlacticAge', () => {
     let galacticAge = new GalacticAge(41, false, false, false, false);
     expect(galacticAge.findAgeExpectancy()).toEqual(15);
   });
+  test('Should return an age Expectancy case age range 50 - 80  and eatGoodFood, exercise, haveFun, and getEnoughSleep', () => {
+    let galacticAge = new GalacticAge(67, true, true, true, true);
+    expect(galacticAge.findAgeExpectancy()).toEqual(3);
+  });
   test('Should return number of years left to live In Mercury', () => {
     let galacticAge = new GalacticAge(41, false, false, false, false);
     expect(galacticAge.findYearsLeftToLiveInMercury()).toEqual(62.5);

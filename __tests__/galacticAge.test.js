@@ -25,5 +25,9 @@ describe('GlacticAge', () => {
     expect(galacticAge.haveFun).toBe(true);
     expect(galacticAge.getEnoughSleep).toBe(true);
   });
+  test('Should return an age Expectancy case age range 0 - 20  and eatGoodFood, exercise, haveFun, and getEnoughSleep', () => {
+    let galacticAge = new GalacticAge(9, true, true, true, true);
+    expect(galacticAge.findAgeExpectancy()).toEqual(30);
+  });
 });
 

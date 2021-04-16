@@ -19,5 +19,13 @@ export default class GalacticAge {
     return this.age / 11.86;
   }
 
+  findAgeExpectancy() {
+    let ageLeftTolive = 0;
+    if (this.age > 0 && this.age <= 20 && this.eatGoodFood && this.exercise && this.haveFun && this.getEnoughSleep) {
+      ageLeftTolive += 60;
+    }
+    return ageLeftTolive;
+  }
+
 }
 

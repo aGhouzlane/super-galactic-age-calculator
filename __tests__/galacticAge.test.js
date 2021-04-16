@@ -55,7 +55,7 @@ describe('GlacticAge', () => {
   });
   test('Should return number of years left to live In Jupiter', () => {
     let galacticAge = new GalacticAge(24, true, true, true, true);
-    expect(galacticAge.findYearsLeftToLiveInJupiter()).toEqual(32);
+    expect(galacticAge.findYearsLeftToLiveInJupiter()).toEqual(2.9510961214165263);
   });
 });
 

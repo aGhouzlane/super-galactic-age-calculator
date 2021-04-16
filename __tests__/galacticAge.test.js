@@ -51,7 +51,7 @@ describe('GlacticAge', () => {
   });
   test('Should return number of years left to live In Mars', () => {
     let galacticAge = new GalacticAge(32, true, true, true, true);
-    expect(galacticAge.findYearsLeftToLiveInMars()).toEqual(18);
+    expect(galacticAge.findYearsLeftToLiveInMars()).toEqual(18.617021276595747);
   });
 });
 

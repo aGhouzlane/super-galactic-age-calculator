@@ -18,5 +18,12 @@ describe('GlacticAge', () => {
     let galacticAge = new GalacticAge(40);
     expect(galacticAge.toJupiterYear()).toEqual(3.3726812816188874);
   });
+  test('Should add parameters to GalacticAge class: eatGoodFood, exercise, haveFun, getEnoughSleep', () => {
+    let galacticAge = new GalacticAge(40, true, true, true, true);
+    expect(galacticAge.eatGoodFood).toBe(false);
+    expect(galacticAge.exercise).toBe(false);
+    expect(galacticAge.haveFun).toBe(false);
+    expect(galacticAge.getEnoughSleep).toBe(false);
+  });
 });
 

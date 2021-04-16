@@ -1,6 +1,10 @@
 export default class GalacticAge {
-  constructor(age) {
+  constructor(age, eatGoodFood, exercise, haveFun, getEnoughSleep) {
     this.age = age;
+    this.eatGoodFood = eatGoodFood;
+    this.exercise = exercise;
+    this.haveFun = haveFun;
+    this.getEnoughSleep = getEnoughSleep;
   }
   toMercuryYear() {
     return this.age / .24;

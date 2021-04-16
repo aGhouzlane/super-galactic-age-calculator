@@ -47,7 +47,7 @@ describe('GlacticAge', () => {
   });
   test('Should return an past year lived if age > 80 (beyond average)', () => {
     let galacticAge = new GalacticAge(99);
-    expect(galacticAge.findAgeExpectancy()).toEqual(9);
+    expect(galacticAge.findAgeExpectancy()).toEqual(99);
   });
   test('Should return number of years left to live In Mercury', () => {
     let galacticAge = new GalacticAge(41, false, false, false, false);

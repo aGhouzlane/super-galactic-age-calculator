@@ -16,7 +16,7 @@ describe('GlacticAge', () => {
   });
   test('Should return a conversion from Earth year to Jupiter year', () => {
     let galacticAge = new GalacticAge(40);
-    expect(galacticAge.toJupiterYear()).toEqual(3);
+    expect(galacticAge.toJupiterYear()).toEqual(3.3726812816188874);
   });
 });
 

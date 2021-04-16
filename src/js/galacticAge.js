@@ -26,6 +26,9 @@ export default class GalacticAge {
     } else if (this.age > 0 && !this.age <= 20 && !this.eatGoodFood && !this.exercise && !this.haveFun && !this.getEnoughSleep) {
       ageLeftTolive += 40;
     }
+    if (this.age > 20 && this.age <= 50 && this.eatGoodFood && this.exercise && this.haveFun && this.getEnoughSleep) {
+      ageLeftTolive += 35;
+    }
     return ageLeftTolive;
   }
 

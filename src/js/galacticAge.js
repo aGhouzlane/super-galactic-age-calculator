@@ -6,6 +6,11 @@ export default class GalacticAge {
   toMercuryYear() {
     return this.age / .24;
   }
+
+  toVenusYear() {
+    return this.age / .62;
+  }
+
 }
 
 /*

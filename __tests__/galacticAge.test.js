@@ -41,5 +41,9 @@ describe('GlacticAge', () => {
     let galacticAge = new GalacticAge(41, false, false, false, false);
     expect(galacticAge.findAgeExpectancy()).toEqual(15);
   });
+  test('Should return number of years left to live to Mercury', () => {
+    let galacticAge = new GalacticAge(41, false, false, false, false);
+    expect(galacticAge.findYearsLeftToLiveInMercury()).toEqual(62);
+  });
 });
 

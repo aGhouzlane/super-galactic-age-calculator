@@ -35,5 +35,11 @@ export default class GalacticAge {
     return ageLeftTolive;
   }
 
+  findYearsLeftToLiveInMercury() {
+    let ageLeftToLive = this.findAgeExpectancy();
+    this.age = ageLeftToLive;
+    return this.toMercuryYear();
+  }
+
 }
 

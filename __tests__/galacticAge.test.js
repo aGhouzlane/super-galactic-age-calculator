@@ -14,4 +14,9 @@ describe('GlacticAge', () => {
     let galacticAge = new GalacticAge(40);
     expect(galacticAge.toMarsYear()).toEqual(21.27659574468085);
   });
+  test('Should return a conversion from Earth year to Jupiter year', () => {
+    let galacticAge = new GalacticAge(40);
+    expect(galacticAge.toJupiterYear()).toEqual(3);
+  });
 });
+

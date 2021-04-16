@@ -11,6 +11,9 @@ export default class GalacticAge {
   toMarsYear() {
     return this.age / 1.88;
   }
+  toJupiterYear() {
+    return this.age / 11.86;
+  }
 
 }
 

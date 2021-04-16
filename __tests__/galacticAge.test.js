@@ -10,8 +10,8 @@ describe('GlacticAge', () => {
     let galacticAge = new GalacticAge(40);
     expect(galacticAge.toMercuryYear()).toEqual(166.66666666666669);
   });
-  test('Should return a conversion from Earth year to Venus year', () => {
+  test('Should return a conversion from Earth year to Mars year', () => {
     let galacticAge = new GalacticAge(40);
-    expect(galacticAge.toVenusYear()).toEqual(64.51612903225806);
+    expect(galacticAge.toMarsYear()).toEqual(21);
   });
 });

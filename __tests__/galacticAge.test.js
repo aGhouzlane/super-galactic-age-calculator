@@ -20,10 +20,10 @@ describe('GlacticAge', () => {
   });
   test('Should add parameters to GalacticAge class: eatGoodFood, exercise, haveFun, getEnoughSleep', () => {
     let galacticAge = new GalacticAge(40, true, true, true, true);
-    expect(galacticAge.eatGoodFood).toBe(false);
-    expect(galacticAge.exercise).toBe(false);
-    expect(galacticAge.haveFun).toBe(false);
-    expect(galacticAge.getEnoughSleep).toBe(false);
+    expect(galacticAge.eatGoodFood).toBe(true);
+    expect(galacticAge.exercise).toBe(true);
+    expect(galacticAge.haveFun).toBe(true);
+    expect(galacticAge.getEnoughSleep).toBe(true);
   });
 });
 

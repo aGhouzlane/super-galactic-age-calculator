@@ -47,7 +47,7 @@ describe('GlacticAge', () => {
   });
   test('Should return number of years left to live In Venus', () => {
     let galacticAge = new GalacticAge(8, true, true, true, true);
-    expect(galacticAge.findYearsLeftToLiveInVenus()).toEqual(96);
+    expect(galacticAge.findYearsLeftToLiveInVenus()).toEqual(96.7741935483871);
   });
 });
 

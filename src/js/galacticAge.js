@@ -34,7 +34,7 @@ export default class GalacticAge {
     if (this.age > 50 && this.age <= 80 && this.eatGoodFood && this.exercise && this.haveFun && this.getEnoughSleep) {
       ageLeftTolive += 9;
     }
-    //If a user has already surpassed the average life expectancy
+    //If a user has already surpassed the average life expectancy 
     if (this.age > 80) {
       return this.age;
     }

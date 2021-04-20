@@ -53,8 +53,7 @@ export default class GalacticAge {
     return this.toMarsYear();
   }
   findYearsLeftToLiveInJupiter() {
-    let ageLeftToLive = this.findAgeExpectancy();
-    this.age = ageLeftToLive;
+    this.age = this.findAgeExpectancy();
     return this.toJupiterYear();
   }
 }

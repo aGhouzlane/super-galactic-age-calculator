@@ -53,9 +53,9 @@ describe('GlacticAge', () => {
     let galacticAge = new GalacticAge(41, false, false, false, false);
     expect(galacticAge.findLifeExpectancyInMercury()).toEqual(62.5);
   });
-  test('Should return number of years left to live In Venus', () => {
+  test('Should return the life expectancy In Venus', () => {
     let galacticAge = new GalacticAge(8, true, true, true, true);
-    expect(galacticAge.findYearsLeftToLiveInVenus()).toEqual(96.7741935483871);
+    expect(galacticAge.findLifeExpectancyInVenus()).toEqual(96.7741935483871);
   });
   test('Should return number of years left to live In Mars', () => {
     let galacticAge = new GalacticAge(32, true, true, true, true);
@@ -68,6 +68,10 @@ describe('GlacticAge', () => {
   test('Should return number of years left to live In Mercury', () => {
     let galacticAge = new GalacticAge(24, true, true, true, true);
     expect(galacticAge.findYearsLeftToliveInMercury()).toEqual(45.83333333333334);
+  });
+  test('Should return number of years left to live In Venus', () => {
+    let galacticAge = new GalacticAge(8, true, true, true, true);
+    expect(galacticAge.findYearsLeftToLiveInVenus()).toEqual(83.87096774193549);
   });
 });
 

@@ -77,9 +77,13 @@ export default class GalacticAge {
     return this.findLifeExpectancyInMars() - age;
   }
 
-  findYearsLeftToLiveInJupiter() {
+  findLifeExpectancyInJupiter() {
     this.age = this.findAgeExpectancy();
     return this.toJupiterYear();
+  }
+  findYearsLeftToLiveInJupiter() {
+    let age = this.toJupiterYear();
+    return this.findLifeExpectancyInJupiter() - age;
   }
 }
 

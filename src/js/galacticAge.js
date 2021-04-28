@@ -20,18 +20,28 @@ export default class GalacticAge {
   }
   findAgeExpectancy() {
     let ageLeftTolive = 0;
-    if (this.age > 0 && this.age <= 20 && this.eatGoodFood && this.exercise && this.haveFun && this.getEnoughSleep) {
+    if (this.age > 0 && this.age <= 20 &&
+      this.eatGoodFood && this.exercise &&
+      this.haveFun && this.getEnoughSleep) {
       ageLeftTolive += 60;
-    } else if (this.age > 0 && this.age <= 20 && !this.eatGoodFood && !this.exercise && !this.haveFun && !this.getEnoughSleep) {
+    } else if (this.age > 0 && this.age <= 20 &&
+      !this.eatGoodFood && !this.exercise &&
+      !this.haveFun && !this.getEnoughSleep) {
       ageLeftTolive += 40;
     }
-    if (this.age > 20 && this.age <= 50 && this.eatGoodFood && this.exercise && this.haveFun && this.getEnoughSleep) {
+    if (this.age > 20 && this.age <= 50 &&
+      this.eatGoodFood && this.exercise &&
+      this.haveFun && this.getEnoughSleep) {
       ageLeftTolive += 35;
     }
-    if (this.age > 20 && this.age <= 50 && !this.eatGoodFood && !this.exercise && !this.haveFun && !this.getEnoughSleep) {
+    if (this.age > 20 && this.age <= 50 &&
+      !this.eatGoodFood && !this.exercise &&
+      !this.haveFun && !this.getEnoughSleep) {
       ageLeftTolive += 15;
     }
-    if (this.age > 50 && this.age <= 80 && this.eatGoodFood && this.exercise && this.haveFun && this.getEnoughSleep) {
+    if (this.age > 50 && this.age <= 80 &&
+      this.eatGoodFood && this.exercise &&
+      this.haveFun && this.getEnoughSleep) {
       ageLeftTolive += 9;
     }
     //If a user has already surpassed the average life expectancy 
@@ -40,10 +50,16 @@ export default class GalacticAge {
     }
     return ageLeftTolive;
   }
-  findYearsLeftToLiveInMercury() {
+  findLifeExpectancyInMercury() {
     this.age = this.findAgeExpectancy();
     return this.toMercuryYear();
   }
+
+  findYearsLeftToliveInMercury() {
+    let age = this.toMercuryYear();
+    return this.findLifeExpectancyInMercury() - age;
+  }
+
   findYearsLeftToLiveInVenus() {
     this.age = this.findAgeExpectancy();
     return this.toVenusYear();

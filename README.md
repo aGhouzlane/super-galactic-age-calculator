@@ -10,13 +10,17 @@
 * JavaScript
 * ES6
 * Jest
+* Webpack
 * JQuery
 
 ## Setup/Installation Requirements
 
 1. Clone git repository [Click here](https://github.com/aGhouzlane/my-resort-website.git)
 2. Find index.html file
-3. Open with your favorite browser by double clicking, or right-click, open with...
+3. `$ open index.html`
+4. `$ npm install` at the root of the project directory
+5. `$ npm run build` at the root of the project directory
+6. `$ npm test galacticAge.test.js` to run tests
 
 ## License
 

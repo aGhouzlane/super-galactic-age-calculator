@@ -5,6 +5,7 @@ export default class GalacticAge {
     this.exercise = exercise;
     this.haveFun = haveFun;
     this.getEnoughSleep = getEnoughSleep;
+    this.averageLifeExpectancy = 70;
   }
   toMercuryYear() {
     return this.age / .24;
@@ -46,16 +47,20 @@ export default class GalacticAge {
     }
     //If a user has already surpassed the average life expectancy 
     if (this.age > 80) {
-      return this.age;
+      ageLeftTolive += 90;
     }
     return ageLeftTolive;
   }
+
   findLifeExpectancyInMercury() {
     this.age = this.findAgeExpectancy();
     return this.toMercuryYear();
   }
   findYearsLeftToliveInMercury() {
     let age = this.toMercuryYear();
+    if (this.averageLifeExpectancy < this.findAgeExpectancy()) {
+      return age - this.findLifeExpectancyInMercury();
+    }
     return this.findLifeExpectancyInMercury() - age;
   }
 

@@ -59,7 +59,7 @@ export default class GalacticAge {
   findYearsLeftToliveInMercury() {
     let age = this.toMercuryYear();
     if (this.averageLifeExpectancy < this.findAgeExpectancy()) {
-      return age - this.findLifeExpectancyInMercury();
+      return Math.abs(age - this.findLifeExpectancyInMercury());
     }
     return this.findLifeExpectancyInMercury() - age;
   }
@@ -70,6 +70,9 @@ export default class GalacticAge {
   }
   findYearsLeftToLiveInVenus() {
     let age = this.toVenusYear();
+    if (this.averageLifeExpectancy < this.findAgeExpectancy()) {
+      return Math.abs(age - this.findLifeExpectancyInVenus());
+    }
     return this.findLifeExpectancyInVenus() - age;
   }
 
@@ -79,6 +82,9 @@ export default class GalacticAge {
   }
   findYearsLeftToLiveInMars() {
     let age = this.toMarsYear();
+    if (this.averageLifeExpectancy < this.findAgeExpectancy()) {
+      return Math.abs(age - this.findLifeExpectancyInMars());
+    }
     return this.findLifeExpectancyInMars() - age;
   }
 

@@ -89,5 +89,9 @@ describe('GlacticAge', () => {
     let galacticAge = new GalacticAge(121, true, true, true, true);
     expect(galacticAge.findYearsLeftToLiveInMars()).toEqual(16.489361702127667);
   });
+  test('Should return age passed expectancy life in Jupiter if expectancy life > average', () => {
+    let galacticAge = new GalacticAge(110, true, true, true, true);
+    expect(galacticAge.findYearsLeftToLiveInJupiter()).toEqual(1.6863406408094432);
+  });
 });
 

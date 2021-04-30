@@ -94,6 +94,9 @@ export default class GalacticAge {
   }
   findYearsLeftToLiveInJupiter() {
     let age = this.toJupiterYear();
+    if (this.averageLifeExpectancy < this.findAgeExpectancy()) {
+      return Math.abs(age - this.findLifeExpectancyInJupiter());
+    }
     return this.findLifeExpectancyInJupiter() - age;
   }
 }
